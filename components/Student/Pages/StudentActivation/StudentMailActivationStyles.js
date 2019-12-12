@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native'
+import { StyleSheet } from 'react-native'
 import { RFPercentage, RFValue } from "react-native-responsive-fontsize"
 import globalStyles from '../../../Shared/Styles/globalStyles'
 
@@ -13,14 +13,14 @@ const MailActivationStyles = StyleSheet.create({
         ...globalStyles.msgSuccess,
     },
     input: {
-     ...globalStyles.input,
-     width: '71%'
+        ...globalStyles.input,
+        width: '71%'
     },
     inputForm: {
         ...globalStyles.inputForm
     },
     container: {
-        ...globalStyles.container,    
+        ...globalStyles.container,
         justifyContent: 'flex-start'
     },
     progressCheckIcon: {
@@ -42,21 +42,20 @@ const MailActivationStyles = StyleSheet.create({
         paddingHorizontal: 25,
         fontSize: RFValue(18),
     },
-    containerInputs:{
+    containerInputs: {
         marginBottom: 10,
-    }, 
+    },
     touchableEnviar: {
-        justifyContent: 'center', 
-        paddingHorizontal: 10, 
+        justifyContent: 'center',
+        paddingHorizontal: 10,
         marginBottom: 2,
         borderLeftWidth: 0.5,
         borderLeftColor: 'black',
         borderStyle: 'solid'
     },
     textTouchableEnviar: {
-        textAlign: 'center', 
+        textAlign: 'center',
         textAlignVertical: 'center'
     }
-});
-
-export default MailActivationStyles;
+})
+export default MailActivationStyles

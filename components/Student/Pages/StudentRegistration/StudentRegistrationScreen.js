@@ -1,11 +1,12 @@
-import * as React from 'react';
-import { TouchableOpacity, TextInput, Text, View, Image, ScrollView } from 'react-native';
+import * as React from 'react'
+import { TouchableOpacity, TextInput, Text, View, Image, ScrollView } from 'react-native'
 import StudentRegistrationStyles from './StudentRegistrationStyles'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 const placeholderTextColor = 'gray'
+
 export default class StudentRegistrationScreen extends React.Component {
   constructor(props) {
-    super(props); 
+    super(props);
     state = {
       cpf: '',
       username: '',
@@ -19,32 +20,33 @@ export default class StudentRegistrationScreen extends React.Component {
       error: '',
     }
   }
+
   handleCPFChange = (cpf) => {
-    this.setState({ cpf });
+    this.setState({ cpf })
   };
   handleUsernameChange = (username) => {
-    this.setState({ username });
+    this.setState({ username })
   };
   handlePasswordChange = (password) => {
-    this.setState({ password });
+    this.setState({ password })
   };
   handleConfirmPasswordChange = (confirmapassword) => {
-    this.setState({ confirmapassword });
+    this.setState({ confirmapassword })
   };
   handleEmailChange = (email) => {
-    this.setState({ email });
+    this.setState({ email })
   };
   handleConfirmEmailChange = (confirmaemail) => {
-    this.setState({ confirmaemail });
+    this.setState({ confirmaemail })
   };
   handleNomeChange = (nome) => {
-    this.setState({ nome });
+    this.setState({ nome })
   };
   handleCREFChange = (cref) => {
-    this.setState({ cref });
+    this.setState({ cref })
   };
   handleDataNascimentoChange = (datanascimento) => {
-    this.setState({ datanascimento });
+    this.setState({ datanascimento })
   };
 
 
@@ -61,7 +63,7 @@ export default class StudentRegistrationScreen extends React.Component {
           nome: this.state.nome,
           cref: this.state.cref,
           datadnascimento: this.state.datanascimento
-        });
+        })
         this.setState({ error: response.data.message })
         if (response.data.user.accesslevel === 2) {
           const resetAction = StackActions.reset({
@@ -69,16 +71,16 @@ export default class StudentRegistrationScreen extends React.Component {
             actions: [
               NavigationActions.navigate({ routeName: 'StudentRoutes', params: { user: response.data.user } }),
             ],
-          });
-          this.props.navigation.dispatch(resetAction);
+          })
+          this.props.navigation.dispatch(resetAction)
         }
       } catch (_err) {
-        this.setState({ error: _err.message });
+        this.setState({ error: _err.message })
       }
     } else {
       this.setState({ error: "Todos os campos precisam ser preenchidos" })
     }
-  };
+  }
 
 
   render() {

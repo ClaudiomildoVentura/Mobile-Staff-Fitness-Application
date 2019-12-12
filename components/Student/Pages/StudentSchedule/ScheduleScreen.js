@@ -20,7 +20,6 @@ export default class ScheduleScreen extends React.Component {
       this.setState({ schedule: res.schedule })
       this.setState({ staff: res.schedule.staff })
     } catch (error) {
-      console.log(error)
     }
   }
 
