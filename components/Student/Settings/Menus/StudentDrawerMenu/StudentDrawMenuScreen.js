@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { ScrollView, TouchableOpacity, Text, View, Button, StyleSheet } from 'react-native'
+import { ScrollView, TouchableOpacity, Text, View, } from 'react-native'
 import { NavigationActions, DrawerActions } from 'react-navigation'
 import PropTypes from 'prop-types'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
