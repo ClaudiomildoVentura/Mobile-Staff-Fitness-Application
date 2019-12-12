@@ -1,6 +1,4 @@
 import { StyleSheet } from 'react-native'
-import { RFPercentage, RFValue } from "react-native-responsive-fontsize"
-import Constants from 'expo-constants'
 import globalStyles from '../../../Shared/Styles/globalStyles'
 
 const MainTypeRegistrationStyles = StyleSheet.create({

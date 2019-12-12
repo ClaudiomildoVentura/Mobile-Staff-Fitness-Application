@@ -1,12 +1,11 @@
 import { StyleSheet } from 'react-native'
-import { RFPercentage, RFValue } from "react-native-responsive-fontsize"
-import Constants from 'expo-constants'
+import { RFValue } from "react-native-responsive-fontsize"
 import globalStyles from '../../../Shared/Styles/globalStyles'
+
 const MainHomeStyles = StyleSheet.create({
     ...globalStyles,
     input: {
         backgroundColor: 'white',
-        //        marginHorizontal: 15,
         paddingHorizontal: 10,
         width: '100%'
     },
@@ -104,6 +103,5 @@ const MainHomeStyles = StyleSheet.create({
         fontSize: 16,
         textAlign: 'center'
     }
-
 })
 export default MainHomeStyles

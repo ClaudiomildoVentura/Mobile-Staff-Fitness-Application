@@ -1,32 +1,31 @@
 import { StyleSheet } from 'react-native'
-import { RFPercentage, RFValue } from "react-native-responsive-fontsize"
-import Constants from 'expo-constants'
+import { RFValue } from "react-native-responsive-fontsize"
 import globalStyles from '../../../Shared/Styles/globalStyles'
+
 const MainStudentRegistrationStyles = StyleSheet.create({
     ...globalStyles,
     inputLabel: {
         fontSize: 14,
         color: '#fff'
-    },  
+    },
     input: {
-        //        marginHorizontal: 15,
         paddingHorizontal: 10,
         width: '100%',
-        height: 50, 
-        fontSize: 20, 
+        height: 50,
+        fontSize: 20,
         paddingBottom: 5,
         color: '#fff'
     },
     container: {
         ...globalStyles.container,
         padding: 10,
-        paddingHorizontal: 30   
+        paddingHorizontal: 30
     },
     containerLogo: {
         flex: 15,
         flexDirection: 'row',
         justifyContent: 'center',
-        textAlign: 'center'     
+        textAlign: 'center'
     },
     containerButton: {
         flex: 1,
@@ -117,6 +116,5 @@ const MainStudentRegistrationStyles = StyleSheet.create({
         fontSize: 16,
         textAlign: 'center'
     }
-
 })
 export default MainStudentRegistrationStyles

@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Text, Image, View, TouchableOpacity } from 'react-native';
+import React, { Component } from 'react'
+import { Text, Image, View, TouchableOpacity } from 'react-native'
 import MainTypeRegistrationStyles from './MainTypeRegistrationStyle'
 import logoPath from '../../../Shared/Configs/globalVars'
 
@@ -19,6 +19,6 @@ export default class MainTypeRegistrationScreen extends Component {
                     <Text>Aluno</Text>
                 </TouchableOpacity>
             </View>
-        );
+        )
     }
 }
