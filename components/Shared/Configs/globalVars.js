@@ -1,0 +1,1 @@
+export const logoPath = require("../Assets/Imgs/LgStaffSemFundo.png")

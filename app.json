@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Staff Fitness",    
+    "description": "Software desenvolvido para melhorar o cotidiano do Personal Trainer.",
+    "slug": "stafffitness-mobile",
+    "privacy": "unlisted",
+    "sdkVersion": "34.0.0",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "primaryColor": "#232d32",
+    "androidStatusBarColor": "#232d32", 
+    "androidStatusBar": { "backgroundColor": "#232d32" },
+    "owner":"LeonardoBelas",
+	"githubUrl": "https://github.com/LeoBelas/StaffFitness-APP.git",
+    "icon": "./components/Shared/Assets/Imgs/LgStaffSemFundo.png",
+    "splash": {
+      "image": "./components/Shared/Assets/Imgs/LgStaffSemFundo.png",
+      "resizeMode": "contain",
+      "hideExponentText": false,
+      "backgroundColor": "#232d32"
+    },
+    "packagerOpts": {
+      "assetExts": [
+        "ttf",
+        "mp4",
+        "otf",
+        "xml"
+      ]
+    },
+    "android": {
+      "package": "com.herokuapp.softwork"
+    }
+  }
+}
